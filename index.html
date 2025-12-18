@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMS | Intelligent Water Monitoring</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <img src="logo.jpg" alt="MAMS Logo" class="logo-img">
+                <span class="navbar__text">Eco-Spectrum</span>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="#home" class="navbar__link">Home</a></li>
+                <li><a href="#technology" class="navbar__link">Technology</a></li>
+                <li><a href="#solutions" class="navbar__link">Solutions</a></li>
+                <li><a href="#team" class="navbar__link">Team</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <div class="hero__badge">ECO-SPECTRUM INTELLIGENT SOLUTION</div>
+            <h1 class="hero__title">
+                Real-Time Warning<br>
+                <span class="highlight">Before Algae Outbreaks</span>
+            </h1>
+            <p class="hero__subtitle">
+                "Predict the future of your water quality." — The next-generation autonomous monitoring system from Eco-Spectrum.
+            </p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary" onclick="scrollToSection('contact')">
+                    Contact Us
+                </button>
+                <button class="btn btn--outline" onclick="scrollToSection('technology')">
+                    How It Works
+                </button>
+            </div>
+        </div>
+        <div class="hero__overlay"></div>
+    </section>
+
+    <section id="technology" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Core Architecture</h2>
+            
+            <div class="process-flow">
+                <div class="process-step">
+                    <i class="ri-anchor-line step-icon"></i>
+                    <h4>Cruise</h4>
+                    <p>GPS Navigation</p>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+                <div class="process-step">
+                    <i class="ri-drop-line step-icon"></i>
+                    <h4>Sample</h4>
+                    <p>Micro-Pump Intake</p>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+                <div class="process-step">
+                    <i class="ri-cpu-line step-icon"></i>
+                    <h4>Analyze</h4>
+                    <p>Edge AI Computing</p>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+                <div class="process-step">
+                    <i class="ri-cloud-upload-line step-icon"></i>
+                    <h4>Upload</h4>
+                    <p>4G Transmission</p>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+                <div class="process-step">
+                    <i class="ri-alarm-warning-line step-icon"></i>
+                    <h4>Alert</h4>
+                    <p>Real-time Warning</p>
+                </div>
+            </div>
+
+            <div class="grid-3 mt-50">
+                <div class="tech-card">
+                    <h3>01. Multi-Spectral Sensing</h3>
+                    <p class="highlight-text">Targeting 620nm Bands</p>
+                    <p>Unlike ordinary cameras, we capture specific spectral bands (e.g., 620nm for Phycocyanin) to precisely separate algae signals from background noise.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>02. Edge Computing</h3>
+                    <p class="highlight-text">Local Analysis</p>
+                    <p>Powered by Jetson Nano. Algorithms run locally on the boat, ensuring zero-latency decision making without relying on unstable cloud connections.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>03. Autonomous Cruise</h3>
+                    <p class="highlight-text">GPS & Multi-point</p>
+                    <p>The system executes precise multi-point sampling paths via GPS, providing comprehensive coverage impossible for static sensors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="section">
+        <div class="container">
+            <h2 class="section-title">Commercial Applications</h2>
+            <div class="grid-3">
+                <div class="app-card">
+                    <i class="ri-government-line app-icon"></i>
+                    <h3>Smart Environment</h3>
+                    <p>For Regulatory Agencies. Provides a dynamic health map of large-scale water bodies for effective supervision.</p>
+                </div>
+                <div class="app-card">
+                    <i class="ri-ship-line app-icon"></i>
+                    <h3>Smart Fishery</h3>
+                    <p>For Aquaculture Farmers. Delivers precise, real-time warnings to prevent fish mortality and economic loss.</p>
+                </div>
+                <div class="app-card">
+                    <i class="ri-microscope-line app-icon"></i>
+                    <h3>Scientific Service</h3>
+                    <p>For Research Institutes. Offers high-frequency, continuous observation data for aquatic ecosystem studies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Executive Team</h2>
+            <div class="team-grid">
+                
+                <div class="team-member">
+                    <div class="member-avatar"><i class="ri-user-star-line"></i></div>
+                    <h4>Jichao Li</h4>
+                    <p class="role">Chief Strategy Officer (CSO)</p>
+                    <p class="bio">Responsible for business layout, business canvas modeling, and strategic partnership development.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar"><i class="ri-code-s-slash-line"></i></div>
+                    <h4>Xiang Li</h4>
+                    <p class="role">Director of Technology & Web</p>
+                    <p class="bio">Lead product presenter. Oversees the digital presence and technical architecture of the Eco-Spectrum platform.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar"><i class="ri-quill-pen-line"></i></div>
+                    <h4>Boping Tan</h4>
+                    <p class="role">Chief Content Officer (CCO)</p>
+                    <p class="bio">Expert in innovation narrative. Author of the core "Innovation Brief" and product documentation.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar"><i class="ri-movie-line"></i></div>
+                    <h4>Xingzhi Sun</h4>
+                    <p class="role">Creative Director</p>
+                    <p class="bio">Visual storytelling lead. Directs the 3D demonstration videos and visual identity of the project.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container narrow">
+            <h2 class="section-title">Partner With Us</h2>
+            <p class="contact-desc">
+                Eco-Spectrum is ready for deployment. <br>
+                Contact our commercial team for pilot programs and investment opportunities.
+            </p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
+                <input type="email" placeholder="Business Email Address" required>
+                <textarea placeholder="How can we help your organization?" rows="4" required></textarea>
+                <button type="submit" class="btn btn--primary" style="width:100%">Request Consultation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MAMS Eco-Spectrum. All Rights Reserved.</p>
+            <p class="small">Designed for Conrad Challenge / Innovation Competitions</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
